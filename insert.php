@@ -10,7 +10,6 @@
 
 include("connection.php");
 include("search.php");
-include("employee.sql");
 
 if(isset($_POST['insertdata'])) {
 
@@ -19,7 +18,7 @@ if(isset($_POST['insertdata'])) {
 
 if(!empty($name) && !empty($salary)) {
 
-$sql = "INSERT INTO employee_info (`name`, `salary`) VALUES ('$name','$salary')";
+$sql = "INSERT INTO `employee_info` (`name`, `salary`) VALUES ('$name','$salary')";
 $qry = mysqli_query($con, $sql);
 if($qry) {
     header("location:http://localhost/php/view.php");

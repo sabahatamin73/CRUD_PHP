@@ -10,7 +10,6 @@
 <?php
 
 include("connection.php");
-include("employee.sql");
 
 if(isset($_POST['submit'])){
 $name = $_POST['search'];

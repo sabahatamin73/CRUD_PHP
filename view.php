@@ -14,7 +14,6 @@
 <?php
 
 include('connection.php');
-include("employee.sql");
 
 $select = "SELECT * FROM employee_info";
 $qrydisplay = mysqli_query($con, $select);
